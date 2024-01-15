@@ -9,8 +9,8 @@ data = pd.read_csv('dataset9000.csv')
 data.dropna(inplace=True)
 
 # Define the mapping and feature columns
-skill_level_mapping = {'Professional': 0, 'Not Interested': 1, 'Poor': 2, 'Beginner': 3,
-                       'Average': 4, 'Intermediate': 5, 'Excellent': 6}
+skill_level_mapping = {'Poor': 1, 'Beginner': 2, 'Average': 3, 'Intermediate': 4,
+                        'Professional': 5, 'Excellent': 6, 'Not Interested': 7}
 feature_columns = ['Database Fundamentals', 'Computer Architecture', 'Distributed Computing Systems',
                    'Cyber Security', 'Networking', 'Software Development', 'Programming Skills',
                    'Project Management', 'Computer Forensics Fundamentals', 'Technical Communication',
